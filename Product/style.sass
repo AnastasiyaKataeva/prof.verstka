@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,3000,4000,7000,9001,3001,400&display=swap')
+
+@mixin menu-offset
+    margin-left: 33px
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: Lato, sans-serif
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+    @media (max-width: 768px)
+        max-width: 734px
+
+    @media (max-width: 425px)
+        max-width: 343px
+
+.header_catalog
+    height: 75px
+    background: #222222
+    padding: 18px 16px
+    box-sizing: border-box
+
+    @media (max-width: 768px)
+        height: 74px
+        padding: 18px 32px
+
+    @media (max-width: 425px)
+        height: 74px
+        padding: 18px 16px
+
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .menu_link_left
+            display: flex
+            list-style-type: none
+            align-items: center
+
+            .link_item
+                @media (max-width: 425px)
+                    display: none
+
+            .link_item,
+            .menu
+                @include menu-offset
+
+        .menu_link_right
+            .search
+                @include menu-offset
+
+.top
+    background: #F8F3F4
+
+    .top_info_catalog
+        height: 148px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        @media (max-width: 768px)
+            padding-left: 16px
+            padding-right: 16px
+
+        @media (max-width: 425px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+        .title_catalog
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            color: #F16D7F
+
+        .link_menu_catalog
+            a
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #636363
+                text-decoration: none
+
+                &:last-child
+                    color: #F16D7F
+                    font-weight: 700
+
+.slider
+    position: relative
+
+    .images
+        img
+            object-fit: cover
+            width: 100%
+            height: 776px
+            @media (max-width: 768px)
+                height: 624px
+
+    .arrow
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 47px
+        width: 47px
+        background: rgba(42, 42, 42, 0.15)
+        position: absolute
+        top: 365px
+
+        @media (max-width: 768px)
+            top: 288px
+
+        &.arrow-right
+            right: 17px
+
+        &.arrow-left
+            left: 17px
