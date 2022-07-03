@@ -1,0 +1,75 @@
+@import "components/variables"
+@import "../library/bootstrap-5.1.3/scss/bootstrap.scss"
+@import "components/mixins"
+@import "components/container"
+@import "components/header"
+@import "components/top"
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,3000,4000,7000,9001,3001,400&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: Lato, sans-serif
+
+.registration
+    margin-top: 64px
+    max-width: 360px
+    font-weight: 300
+    @media (max-width: 768px)
+        margin-top: 40px
+
+    label
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+
+    input
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-bottom: 20px
+
+    button
+        @include button-bcg(14px, 16px 29px)
+
+    .registration_text
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-bottom: 39px
+
+.loyalty
+    padding-left: 116px
+    margin-top: 64px
+    font-weight: 300
+    color: #000000
+    max-width: 652px
+    @media (max-width: 768px)
+        max-width: 354px
+        padding-left: 0
+        margin-top: 40px
+    @media (max-width: 576px)
+        margin-left: 9px
+
+    div:first-child
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 22px
+        @media (max-width: 768px)
+            font-size: 16px
+            line-height: 19px
+
+    div:nth-child(2)
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 21px
+        @media (max-width: 768px)
+            font-size: 16px
+            line-height: 19px
+
+    li
+        list-style-image: url("../images/check.svg")
+        padding-bottom: 16px
