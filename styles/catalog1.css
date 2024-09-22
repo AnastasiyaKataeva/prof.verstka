@@ -269,7 +269,7 @@ body {
 }
 
 .footer_item {
-    background: url("images/photo subscribe.jpg") no-repeat;
+    background: url("../images/photo subscribe.jpg") no-repeat;
     background-size: cover;
     min-height: 448px;
     padding-top: 100px;
